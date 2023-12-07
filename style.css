@@ -13,7 +13,7 @@ a{
 }
 
 
-@keyframes rotationindicator350px { 
+@keyframes rotation_indicator_350px { 
     0% { transform: rotate(0deg) translateY(350px) rotate(0deg); } 
     100% {transform: rotate(360deg)translateY(350px) rotate(-360deg);} 
 } 
@@ -86,14 +86,14 @@ main{
     position:relative;
     top:275px;
     margin-inline: auto;
-    width: 18rem;
+    width: min-content;
     background: rgba(255, 255, 255, 0.8);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
-    animation: rotation_indicateur_350px 30s infinite linear; 
+    animation: rotation_indicator_350px 30s infinite linear; 
 }
 
 #indicateur>p, #indicateur>h1{
@@ -115,7 +115,8 @@ main{
 
 @media (max-width:1000px){
     #indicateur{
-        animation: rotation_indicateur_200px 30s infinite linear; 
+        animation: rotation_indicator_200px 30s infinite linear; 
+        top:175px;
     }
     #taille_planète{
         height:200px;
