@@ -24,7 +24,7 @@ main{
 
 Header{
 
-    
+    padding-top: 10px;
     display:grid;
     row-gap: 10px;
 }
@@ -33,9 +33,13 @@ Header{
     grid-row: 1;
     height:max-content;
     display:flex;
-    
-    justify-content: space-evenly;
+    justify-content: end;
+    margin:10px;
     list-style-type: none;
+}
+
+#mode>li:first-child{
+    margin-right: 50px;
 }
 
 #navigation{
@@ -57,4 +61,13 @@ Header{
 
 #navigation>li:hover{
     background-color:rgb(214, 245, 255);
+}
+
+
+footer{
+    box-shadow: -1px -5px 5px rgb(0,0,0,0.5);
+}
+
+#test{
+    height:1000px;
 }
