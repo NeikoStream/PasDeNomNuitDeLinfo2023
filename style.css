@@ -13,16 +13,14 @@ a{
 }
 
 
-@keyframes GFG { 
-    0% { 
-        transform: rotate(0deg)  
-              translateY(400px) rotate(0deg); 
-    } 
+@keyframes rotationindicator350px { 
+    0% { transform: rotate(0deg) translateY(350px) rotate(0deg); } 
+    100% {transform: rotate(360deg)translateY(350px) rotate(-360deg);} 
+} 
 
-    100% { 
-        transform: rotate(360deg)  
-              translateY(400px) rotate(-360deg); 
-    } 
+@keyframes rotation_indicator_200px { 
+    0% { transform: rotate(0deg) translateY(200px) rotate(0deg); } 
+    100% {transform: rotate(360deg)translateY(200px) rotate(-360deg);} 
 } 
 
 /* Header */
@@ -95,7 +93,7 @@ main{
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
-    animation: GFG 30s infinite linear; 
+    animation: rotation_indicateur_350px 30s infinite linear; 
 }
 
 #indicateur>p, #indicateur>h1{
@@ -115,7 +113,17 @@ main{
 }
 
 
-
+@media (max-width:1000px){
+    #indicateur{
+        animation: rotation_indicateur_200px 30s infinite linear; 
+    }
+    #taille_planète{
+        height:200px;
+        width:200px;
+        
+    }
+    
+}
 /* footer */
 
 footer{
