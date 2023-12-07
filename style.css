@@ -64,6 +64,31 @@ Header{
     background-color:rgb(214, 245, 255);
 }
 
+/* Main */
+
+main{
+    background-color: black;
+}
+
+#indicateur{
+    width:100px;
+    
+}
+
+#taille_planète{
+    height:400px;
+    width:400px;
+}
+
+#cadrage_image{
+    display:flex;
+    
+    justify-content: center;
+}
+
+
+
+/* footer */
 
 footer{
     box-shadow: -1px -5px 5px rgb(0,0,0,0.5);
