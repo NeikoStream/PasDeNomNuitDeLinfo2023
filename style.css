@@ -113,10 +113,38 @@ main{
 }
 
 
+
+#carte_choix{
+    display:flex;
+    width:50%;
+    justify-content: space-evenly;
+}
+
+.cartes{
+    
+    border:4px solid purple;
+    border-radius: 10px;
+    padding:2%;
+    width:fit-content;
+    background-color: white;
+}
+
+.cartes>img{
+    width:10rem;
+    padding-block: 2%;
+}
+
+.cartes>p{
+    padding-top: 10%;
+    width:10rem;
+}
+
 @media (max-width:1000px){
     #indicateur{
-        animation: rotation_indicator_200px 30s infinite linear; 
-        top:175px;
+        animation: none; 
+        position:static;
+        margin-bottom: 20px;
+        
     }
     #taille_planète{
         height:200px;
