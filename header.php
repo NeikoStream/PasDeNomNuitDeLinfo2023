@@ -11,20 +11,18 @@
     <header> 
                    
         <ul id="mode">
-            <li><a href="./index.html">Noël</a></li>
-            <li><a href="./index.html">Sombre</a></li>
+            <li><a href="./header.html">Noël</a></li>
+            <li><a href="./header.html">Sombre</a></li>
         </ul>
         
         <nav>
                       
             <ul id="navigation">
-                <li><a href="./index.html">Jeux</a></li>
-                <li><a href="./index.html">Information</a></li>
+                <li><a href="./header.html">Jeu</a></li>
+                <li><a href="./header.html">Information</a></li>
             </ul>
             
         </nav>
     </header>
     
     
-</body>
-</html>
