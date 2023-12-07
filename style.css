@@ -36,6 +36,7 @@ Header{
     justify-content: end;
     margin:10px;
     list-style-type: none;
+
 }
 
 #mode>li:first-child{
@@ -66,8 +67,22 @@ Header{
 
 footer{
     box-shadow: -1px -5px 5px rgb(0,0,0,0.5);
+    padding:30px;
+    
+}
+
+#footer_liste{
+    list-style-type: none;
+    display:flex;
+    justify-content: space-around;
+}
+
+#footer_liste>li:hover{
+    text-decoration: underline;
+    cursor:pointer;
 }
 
 #test{
     height:1000px;
+    
 }
