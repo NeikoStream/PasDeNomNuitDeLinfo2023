@@ -12,14 +12,25 @@ a{
     color:black;
 }
 
+
+@keyframes GFG { 
+    0% { 
+        transform: rotate(0deg)  
+              translateY(400px) rotate(0deg); 
+    } 
+
+    100% { 
+        transform: rotate(360deg)  
+              translateY(400px) rotate(-360deg); 
+    } 
+} 
+
 /* Header */
 
-/* Main */
-
-/* Footer */
 
 main{
-    padding:10%;
+    padding-block:100px;
+    padding-inline: 10%;
 }
 
 Header{
@@ -56,7 +67,7 @@ Header{
 #navigation>li{
     padding:10px;
     background-color: lightblue;
-    transition: all 0.4s;
+    transition: background-color 0.4s;
     border-radius: 10px;
 }
 
@@ -68,16 +79,34 @@ Header{
 
 main{
     background-color: black;
+    margin-inline:auto;
+    height:1000px;
 }
 
 #indicateur{
-    width:100px;
+    width:160px;
+    padding:10px;
+    position:relative;
+    top:275px;
+    margin-inline: auto;
     
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    animation: GFG 30s infinite linear; 
+}
+
+#indicateur>p, #indicateur>h1{
+    color:white;
 }
 
 #taille_planète{
     height:400px;
     width:400px;
+    
 }
 
 #cadrage_image{
@@ -105,9 +134,4 @@ footer{
 #footer_liste>li:hover{
     text-decoration: underline;
     cursor:pointer;
-}
-
-#test{
-    height:1000px;
-    
 }
