@@ -1,0 +1,60 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+*{
+    margin : 0;
+    padding: 0;
+}
+
+a{
+    text-decoration:None;
+    color:black;
+}
+
+/* Header */
+
+/* Main */
+
+/* Footer */
+
+main{
+    padding:10%;
+}
+
+Header{
+
+    
+    display:grid;
+    row-gap: 10px;
+}
+
+#mode{
+    grid-row: 1;
+    height:max-content;
+    display:flex;
+    
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+#navigation{
+    display:flex;
+    list-style-type: none;
+    justify-content: space-around;
+    grid-row: 2;
+    box-shadow: 1px 5px 5px rgb(0,0,0,0.5);
+    height:max-content;
+    padding-bottom: 20px;
+}
+
+#navigation>li{
+    padding:10px;
+    background-color: lightblue;
+    transition: all 0.4s;
+    border-radius: 10px;
+}
+
+#navigation>li:hover{
+    background-color:rgb(214, 245, 255);
+}

@@ -1,2 +1,0 @@
-php
-extends("header.php");
