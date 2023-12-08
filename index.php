@@ -18,7 +18,7 @@
     <img src="image/usine_nucléaire.png" alt="image">
     <p>Cette Usine a pour objectif de remplacer les usines à charbon pour une énergie plus verte mais cette énergie pollue aussi la planète </p>
     <div>
-      <p>+100CO2/s</p>
+      <p>&#2622; +100CO2/s  &#9889;</p>
     </div>
   </div>
   <div class="cartes cartes_identité" id="carte2">

@@ -110,6 +110,8 @@ main{
     display:flex;
     
     justify-content: center;
+   
+    
 }
 
 
@@ -120,6 +122,7 @@ main{
     justify-items: center;
     margin-bottom: 10%;
     position:absolute;
+    top:21%;
     
 }
 
