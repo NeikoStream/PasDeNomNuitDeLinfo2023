@@ -93,14 +93,14 @@ main {
   position: relative;
   top: 275px;
   margin-inline: auto;
-  width: min-content;
+  width: 20%;
   background: rgba(255, 255, 255, 0.8);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  animation: rotation_indicator_350px 30s infinite linear;
+  animation: rotation_indicator_350px 50s infinite linear;
 }
 
 #indicateur > p,
@@ -161,10 +161,9 @@ footer {
 
 .chose-card {
   display: flex;
-  justify-content: center; /* Centre les éléments horizontalement */
-  align-items: center; /* Centre les éléments verticalement */
-  flex-wrap: wrap;
-  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+  margin-top: -15%;
 }
 
 /* Ajoutez ce CSS à votre feuille de style existante */
