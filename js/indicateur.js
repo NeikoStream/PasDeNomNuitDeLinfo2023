@@ -1,6 +1,6 @@
 var valeursInitiales = {
   co2: 400,
-  temperature: 20,
+  temperature: 0,
   population: 500,
   budget: 200,
   electricite: 0,
@@ -45,8 +45,7 @@ function mettreAJourIndicateursEtBarres() {
 }
 
 function evoluerDansLeTemps() {
-  valeursActuelles.co2 +=
-    incrementation_co2 + valeursActuelles.electricite * 0.2;
+  valeursActuelles.co2 += incrementation_co2 + valeursActuelles.electricite * 0.2;
   valeursActuelles.temperature += valeursActuelles.co2 * 0.0000001;
   if (valeursActuelles.co2 >= 30000) {
     valeursActuelles.population -= incrementation_pop_moins;
@@ -58,21 +57,30 @@ function evoluerDansLeTemps() {
   valeursActuelles.fossile -= incrementation_fossile;
 
   mettreAJourIndicateursEtBarres();
+  arretJeu
+  if (valeursActuelles.population === 0) {
+    arretJeu();
+  } else if (valeursActuelles.radioactivite === 150) {
+    arretJeu();
+  } else if (valeursActuelles.temperature === 3) {
+    arretJeu();
+  } else if (valeursActuelles.population === 3500 && valeursActuelles.electricite === 0) {
+    arretJeu();
+  } else if (valeursActuelles.co2 === 10000) {
+    arretJeu();
+  }  
 }
 
-function ajouterUn() {
-  incrementation += 1;
-  evoluerDansLeTemps();
-}
-
-function ajouterTrois() {
-  incrementation += 3;
-  evoluerDansLeTemps();
-}
-
-function enleverCinq() {
-  incrementation -= 5;
-  evoluerDansLeTemps();
+function arretJeu() {
+  incrementation_co2 = 0;
+  incrementation_temperature = 0;
+  incrementation_pop_moins = 0;
+  incrementation_pop_plus = 0;
+  incrementation_budget = 0;
+  incrementation_electricite = 0;
+  incrementation_radioactivite = 0;
+  incrementation_fossile = 0;
+  
 }
 
 document.addEventListener("DOMContentLoaded", function () {
