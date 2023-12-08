@@ -1,72 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="indicateur.js"></script>
-  <script src="cards.js"></script>
-  <title>Indicateurs avec Barres de Chargement</title>
-</head>
-<body>
-
-  <h1>Indicateurs avec Barres de Chargement</h1>
-
-  <div>
-    <h2>Indicateurs</h2>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./js/indicateur.js"></script>
+    <script src="cards.js"></script>
+    <title>Indicateurs avec Barres de Chargement</title>
+  </head>
+  <body>
+    <h1>Indicateurs avec Barres de Chargement</h1>
 
     <div>
-      <strong>CO2 (en ppm):</strong>
-      <span id="valeurCO2">400</span>
-      <progress id="barreCO2" max="10000" value="400"></progress>
+      <h2>Indicateurs</h2>
+
+      <div>
+        <strong>CO2 (en ppm):</strong>
+        <span id="valeurCO2">400</span>
+        <progress id="barreCO2" max="10000" value="400"></progress>
+      </div>
+
+      <div>
+        <strong>Température (en °C):</strong>
+        <span id="valeurTemperature">20</span>
+        <progress id="barreTemperature" max="40" value="20"></progress>
+      </div>
+
+      <div>
+        <strong>Population (en millions):</strong>
+        <span id="valeurPopulation">500</span>
+        <progress id="barrePopulation" max="10000" value="500"></progress>
+      </div>
+
+      <div>
+        <strong>Budget (en millions d'euros):</strong>
+        <span id="valeurBudget">200</span>
+        <progress id="barreBudget" max="10000" value="200"></progress>
+      </div>
+
+      <div>
+        <strong>Electricité (en MW/h):</strong>
+        <span id="valeurElectricité">0</span>
+        <progress id="barreElectricite" max="100000" value="0"></progress>
+      </div>
+
+      <div>
+        <strong>Radioactivité (en Sievert):</strong>
+        <span id="valeurRadioactivite">0</span>
+        <progress id="barreRadioactivite" max="10000" value="0"></progress>
+      </div>
+
+      <div>
+        <strong>Ressource fossile (en Tonne Equivalent Pétrole TEP):</strong>
+        <span id="valeurFossile">10000</span>
+        <progress id="barreFossile" max="10000" value="10000"></progress>
+      </div>
     </div>
 
-    <div>
-      <strong>Température (en °C):</strong>
-      <span id="valeurTemperature">20</span>
-      <progress id="barreTemperature" max="40" value="20"></progress>
-    </div>
+    <h2>Actions</h2>
 
-    <div>
-      <strong>Population (en millions):</strong>
-      <span id="valeurPopulation">500</span>
-      <progress id="barrePopulation" max="10000" value="500"></progress>
-    </div>
+    <button onclick="ajouterUn()">+1 à tous les indicateurs</button>
+    <button onclick="ajouterTrois()">+3 à tous les indicateurs</button>
+    <button onclick="enleverCinq()">-5 à tous les indicateurs</button>
 
-    <div>
-      <strong>Budget (en millions d'euros):</strong>
-      <span id="valeurBudget">200</span>
-      <progress id="barreBudget" max="10000" value="200"></progress>
-    </div>
+    <h2>Générateur de Valeur Aléatoire</h2>
 
-    <div>
-      <strong>Electricité (en MW/h):</strong>
-      <span id="valeurElectricité">0</span>
-      <progress id="barreElectricite" max="100000" value="0"></progress>
-    </div>
-
-    <div>
-      <strong>Radioactivité (en Sievert):</strong>
-      <span id="valeurRadioactivite">0</span>
-      <progress id="barreRadioactivite" max="10000" value="0"></progress>
-    </div>
-
-    <div>
-      <strong>Ressource fossile (en Tonne Equivalent Pétrole TEP):</strong>
-      <span id="valeurFossile">10000</span>
-      <progress id="barreFossile" max="10000" value="10000"></progress>
-    </div>
-  </div>
-
-  <h2>Actions</h2>
-
-  <button onclick="ajouterUn()">+1 à tous les indicateurs</button>
-  <button onclick="ajouterTrois()">+3 à tous les indicateurs</button>
-  <button onclick="enleverCinq()">-5 à tous les indicateurs</button>
-
-  <h2>Générateur de Valeur Aléatoire</h2>
-
-  <button id="genererBouton">Générer Valeur Aléatoire</button>
-  <p id="resultat">La valeur aléatoire apparaîtra ici.</p>
-
-</body>
+    <button id="genererBouton">Générer Valeur Aléatoire</button>
+    <p id="resultat">La valeur aléatoire apparaîtra ici.</p>
+  </body>
 </html>
