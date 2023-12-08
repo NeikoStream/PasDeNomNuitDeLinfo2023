@@ -1,12 +1,5 @@
-
-    <footer> 
-                   
-        <ul id="footer_liste">
-            <li>Jeu</li>
-            <li>Information</li>
-        </ul>
-    </footer>
-    
-    
-</body>
-</html>
+<footer class="footer mt-auto py-3 bg-light">
+    <div class="container">
+        <span class="text-muted">© Equipe Pas de Nom</span>
+    </div>
+</footer>
