@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="test.js"></script>
+  <script src="indicateur.js"></script>
+  <script src="cards.js"></script>
   <title>Indicateurs avec Barres de Chargement</title>
 </head>
 <body>
@@ -16,7 +17,7 @@
     <div>
       <strong>CO2 (en ppm):</strong>
       <span id="valeurCO2">400</span>
-      <progress id="barreCO2" max="1000" value="400"></progress>
+      <progress id="barreCO2" max="10000" value="400"></progress>
     </div>
 
     <div>
@@ -28,28 +29,44 @@
     <div>
       <strong>Population (en millions):</strong>
       <span id="valeurPopulation">500</span>
-      <progress id="barrePopulation" max="1000" value="500"></progress>
+      <progress id="barrePopulation" max="10000" value="500"></progress>
     </div>
 
     <div>
       <strong>Budget (en millions d'euros):</strong>
       <span id="valeurBudget">200</span>
-      <progress id="barreBudget" max="1000" value="200"></progress>
+      <progress id="barreBudget" max="10000" value="200"></progress>
+    </div>
+
+    <div>
+      <strong>Electricité (en MW/h):</strong>
+      <span id="valeurElectricité">0</span>
+      <progress id="barreElectricite" max="100000" value="0"></progress>
+    </div>
+
+    <div>
+      <strong>Radioactivité (en Sievert):</strong>
+      <span id="valeurRadioactivite">0</span>
+      <progress id="barreRadioactivite" max="10000" value="0"></progress>
+    </div>
+
+    <div>
+      <strong>Ressource fossile (en Tonne Equivalent Pétrole TEP):</strong>
+      <span id="valeurFossile">10000</span>
+      <progress id="barreFossile" max="10000" value="10000"></progress>
     </div>
   </div>
 
-  <h2>Cartes</h2>
-
-  <button id="usineCharbon">Usine à Charbon</button>
-  <button id="velo">Vélo</button>
-  <button id="petrole">Pétrole</button>
-
   <h2>Actions</h2>
 
-  <button id="ajouterUn">+1 à tous les indicateurs</button>
-  <button id="ajouterTrois">+3 à tous les indicateurs</button>
-  <button id="enleverCinq">-5 à tous les indicateurs</button>
+  <button onclick="ajouterUn()">+1 à tous les indicateurs</button>
+  <button onclick="ajouterTrois()">+3 à tous les indicateurs</button>
+  <button onclick="enleverCinq()">-5 à tous les indicateurs</button>
 
-  <script src="script.js"></script>
+  <h2>Générateur de Valeur Aléatoire</h2>
+
+  <button id="genererBouton">Générer Valeur Aléatoire</button>
+  <p id="resultat">La valeur aléatoire apparaîtra ici.</p>
+
 </body>
 </html>
