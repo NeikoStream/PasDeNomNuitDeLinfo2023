@@ -35,7 +35,12 @@ camera.position.z = 25;
 // Création du rendu
 const renderer = new THREE.WebGLRenderer();
 renderer.setSize(window.innerWidth, window.innerHeight);
-document.body.appendChild(renderer.domElement);
+
+// Obtenez l'élément HTML avec l'ID "earth"
+const earthContainer = document.getElementById("earth");
+
+// Ajoutez le canevas de rendu à l'élément avec l'ID "earth"
+earthContainer.appendChild(renderer.domElement);
 
 // Création d'un matériau pour les bâtiments
 const buildingMaterial = new THREE.MeshBasicMaterial({ color: 0x808080 }); // Couleur grise pour les bâtiments
