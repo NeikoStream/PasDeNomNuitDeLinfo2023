@@ -757,6 +757,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (card1) {
         card1.addEventListener("click", function () {
           // Appel de la fonction ou du code lorsque card1 est cliquée
+
           effectCard(card1.getAttribute("carte"));
         });
         reprendre;
@@ -774,6 +775,11 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
       console.error("L'élément avec l'ID 'chose' n'a pas été trouvé.");
     }
+  }
+  // Création de bâtiments aléatoires sur toute la planète
+  const numberOfBuildings = 100;
+  for (let i = 0; i < numberOfBuildings; i++) {
+    createRandomBuilding();
   }
 
   function popupChoix() {

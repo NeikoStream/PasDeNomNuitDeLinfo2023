@@ -25,7 +25,8 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Noël</a>
+
+                        <button class="nav-link" onclick='changingColor("./img/mode_neige.jpg")'>Noël</button>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Sombre</a>
