@@ -28,7 +28,7 @@ a{
 
 main{
     padding-block:100px;
-    padding-inline: 10%;
+   
 }
 
 Header{
@@ -63,7 +63,7 @@ Header{
 }
 
 #navigation>li{
-    padding:10px;
+    padding:2%;
     background-color: lightblue;
     transition: background-color 0.4s;
     border-radius: 10px;
@@ -110,13 +110,63 @@ main{
     display:flex;
     
     justify-content: center;
+   
+    
 }
+
+
+
+#carte_choix{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    margin-bottom: 10%;
+    position:absolute;
+    top:21%;
+    
+}
+
+.cartes{
+    border:4px solid purple;
+    border-radius: 10px;
+    
+    text-align: center;
+    width:50%;
+    background-color: white;
+}
+
+.cartes>h2{
+    
+    background-color: purple;
+    padding:10px;
+    border-radius: 10rem;
+}
+
+.cartes>img{
+    width:100%;
+    padding: 5%;
+}
+
+.cartes>p{
+    padding-top: 10%;
+    padding:5%;
+    align-self:center;
+}
+
+.cartes>div>p{
+    padding:2%;
+    background-color: purple;
+    width:100%;
+}
+
 
 
 @media (max-width:1000px){
     #indicateur{
-        animation: rotation_indicator_200px 30s infinite linear; 
-        top:175px;
+        animation: none; 
+        position:static;
+        margin-bottom: 20px;
+        
     }
     #taille_planète{
         height:200px;
