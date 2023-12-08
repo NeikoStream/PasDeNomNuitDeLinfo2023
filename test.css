@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  #tableauScore {
+    width: 60%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    border: 1px solid #333;
+  }
+  
+  #tableauScore th, #tableauScore td {
+    border: 1px solid #333;
+    padding: 8px;
+  }
+  
+  #tableauScore th {
+    background-color: #f2f2f2;
+  }
+  
+  #corpsTableau tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }  
