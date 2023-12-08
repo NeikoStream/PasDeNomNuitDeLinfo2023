@@ -100,65 +100,11 @@ main{
     color:white;
 }
 
-#taille_planète{
-    height:400px;
-    width:400px;
-    
-}
-
-#cadrage_image{
-    display:flex;
-    
-    justify-content: center;
-   
-    
-}
-
-
-
-#carte_choix{
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    margin-bottom: 10%;
+#earth {
     position:absolute;
-    top:21%;
-    
+    width:0;
+    height:0;
 }
-
-.cartes{
-    border:4px solid purple;
-    border-radius: 10px;
-    
-    text-align: center;
-    width:50%;
-    background-color: white;
-}
-
-.cartes>h2{
-    
-    background-color: purple;
-    padding:10px;
-    border-radius: 10rem;
-}
-
-.cartes>img{
-    width:100%;
-    padding: 5%;
-}
-
-.cartes>p{
-    padding-top: 10%;
-    padding:5%;
-    align-self:center;
-}
-
-.cartes>div>p{
-    padding:2%;
-    background-color: purple;
-    width:100%;
-}
-
 
 
 @media (max-width:1000px){
