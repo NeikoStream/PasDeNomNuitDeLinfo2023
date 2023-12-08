@@ -3,9 +3,9 @@ var valeursInitiales = {
   temperature: 20,
   population: 500,
   budget: 200,
-  electricite: 250,
-  radiocativite: 150,
-  fossile: 90
+  electricite: 0,
+  radioactivite: 0,
+  fossile: 10000
 };
 
 var valeursActuelles = { ...valeursInitiales }; // Copie des valeurs initiales
@@ -23,7 +23,7 @@ function mettreAJourIndicateursEtBarres() {
   document.getElementById("valeurPopulation").textContent = valeursActuelles.population;
   document.getElementById("valeurBudget").textContent = valeursActuelles.budget;
   document.getElementById("valeurElectricité").textContent = valeursActuelles.electricite;
-  document.getElementById("valeurRadioactivité").textContent = valeursActuelles.radioactivite;
+  document.getElementById("valeurRadioactivite").textContent = valeursActuelles.radioactivite;
   document.getElementById("valeurFossile").textContent = valeursActuelles.fossile;
 
   document.getElementById("barreCO2").value = valeursActuelles.co2;
@@ -31,13 +31,13 @@ function mettreAJourIndicateursEtBarres() {
   document.getElementById("barrePopulation").value = valeursActuelles.population;
   document.getElementById("barreBudget").value = valeursActuelles.budget;
   document.getElementById("barreElectricité").value = valeursActuelles.electricite;
-  document.getElementById("barreRadiocativite").value = valeursActuelles.radioactivite;
+  document.getElementById("barreRadioactivite").value = valeursActuelles.radioactivite;
   document.getElementById("barreFossile").value = valeursActuelles.fossile;
 }
 
 function evoluerDansLeTemps() {
   valeursActuelles.co2 += incrementation_co2+valeursActuelles.electricite*0.2;
-  valeursActuelles.temperature += valeursActuelles.co2*0.001;
+  valeursActuelles.temperature += valeursActuelles.co2*0.0000001;
   if(valeursActuelles.co2 >= 30000){
     valeursActuelles.population -= incrementation_pop_moins;
   }
