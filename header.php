@@ -16,13 +16,15 @@
         <ul id="mode">
             <li><a href="./header.html">Noël</a></li>
             <li><a href="./header.html">Sombre</a></li>
+            <li><a href="./header.html">Sombre</a></li>
         </ul>
 
         <nav>
 
             <ul id="navigation">
-                <li><a href="./header.html">Jeu</a></li>
+                <li><a href="./index.php">Jeu</a></li>
                 <li><a href="./header.html">Information</a></li>
+                <li><a href="./card.php">Cartes</a></li>
             </ul>
 
         </nav>
