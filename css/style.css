@@ -1,141 +1,180 @@
-*,*::before,*::after{
-    box-sizing: border-box;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-*{
-    margin : 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-a{
-    text-decoration:None;
-    color:black;
+a {
+  text-decoration: None;
+  color: black;
 }
 
+@keyframes rotation_indicator_350px {
+  0% {
+    transform: rotate(0deg) translateY(350px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateY(350px) rotate(-360deg);
+  }
+}
 
-@keyframes rotation_indicator_350px { 
-    0% { transform: rotate(0deg) translateY(350px) rotate(0deg); } 
-    100% {transform: rotate(360deg)translateY(350px) rotate(-360deg);} 
-} 
-
-@keyframes rotation_indicator_200px { 
-    0% { transform: rotate(0deg) translateY(200px) rotate(0deg); } 
-    100% {transform: rotate(360deg)translateY(200px) rotate(-360deg);} 
-} 
+@keyframes rotation_indicator_200px {
+  0% {
+    transform: rotate(0deg) translateY(200px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateY(200px) rotate(-360deg);
+  }
+}
 
 /* Header */
 
-
-main{
-    padding-block:100px;
-   
+main {
+  padding-block: 100px;
 }
 
-Header{
-
-    padding-top: 10px;
-    display:grid;
-    row-gap: 10px;
+Header {
+  padding-top: 10px;
+  display: grid;
+  row-gap: 10px;
 }
 
-#mode{
-    grid-row: 1;
-    height:max-content;
-    display:flex;
-    justify-content: end;
-    margin:10px;
-    list-style-type: none;
-
+#mode {
+  grid-row: 1;
+  height: max-content;
+  display: flex;
+  justify-content: end;
+  margin: 10px;
+  list-style-type: none;
 }
 
-#mode>li:first-child{
-    margin-right: 50px;
+#mode > li:first-child {
+  margin-right: 50px;
 }
 
-#navigation{
-    display:flex;
-    list-style-type: none;
-    justify-content: space-around;
-    grid-row: 2;
-    box-shadow: 1px 5px 5px rgb(0,0,0,0.5);
-    height:max-content;
-    padding-bottom: 20px;
+#navigation {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  grid-row: 2;
+  box-shadow: 1px 5px 5px rgb(0, 0, 0, 0.5);
+  height: max-content;
+  padding-bottom: 20px;
 }
 
-#navigation>li{
-    padding:2%;
-    background-color: lightblue;
-    transition: background-color 0.4s;
-    border-radius: 10px;
+#navigation > li {
+  padding: 2%;
+  background-color: lightblue;
+  transition: background-color 0.4s;
+  border-radius: 10px;
 }
 
-#navigation>li:hover{
-    background-color:rgb(214, 245, 255);
+#navigation > li:hover {
+  background-color: rgb(214, 245, 255);
 }
 
 /* Main */
 
-main{
-    background-color: black;
-    margin-inline:auto;
-    height:1000px;
+main {
+  background-color: black;
+  margin-inline: auto;
+  height: 1000px;
 }
 
-#indicateur{
-    padding:10px;
-    position:relative;
-    top:275px;
-    margin-inline: auto;
-    width: min-content;
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    animation: rotation_indicator_350px 30s infinite linear; 
+#indicateur {
+  padding: 10px;
+  position: relative;
+  top: 275px;
+  margin-inline: auto;
+  width: min-content;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  animation: rotation_indicator_350px 30s infinite linear;
 }
 
-#indicateur>p, #indicateur>h1{
-    color:white;
+#indicateur > p,
+#indicateur > h1 {
+  color: white;
 }
 
 #earth {
-    position:absolute;
-    width:0;
-    height:0;
+  position: relative;
+  width: 0;
+  height: 0;
+  z-index: 0;
 }
 
-
-@media (max-width:1000px){
-    #indicateur{
-        animation: none; 
-        position:static;
-        margin-bottom: 20px;
-        
-    }
-    #taille_planète{
-        height:200px;
-        width:200px;
-        
-    }
-    
+@media (max-width: 1000px) {
+  #indicateur {
+    animation: none;
+    position: static;
+    margin-bottom: 20px;
+  }
+  #taille_planète {
+    height: 200px;
+    width: 200px;
+  }
 }
 /* footer */
 
-footer{
-    box-shadow: -1px -5px 5px rgb(0,0,0,0.5);
-    padding:30px;
-    
+footer {
+  box-shadow: -1px -5px 5px rgb(0, 0, 0, 0.5);
+  padding: 30px;
 }
 
-#footer_liste{
-    list-style-type: none;
-    display:flex;
-    justify-content: space-around;
+#footer_liste {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
 }
 
-#footer_liste>li:hover{
-    text-decoration: underline;
-    cursor:pointer;
+#footer_liste > li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Cards * /
+
+/* Ajoutez ce CSS à votre feuille de style existante */
+
+.chose-card {
+  display: flex;
+  justify-content: center; /* Centre les éléments horizontalement */
+  align-items: center; /* Centre les éléments verticalement */
+  flex-wrap: wrap;
+  z-index: 9999;
+}
+
+/* Ajoutez ce CSS à votre feuille de style existante */
+
+.carte {
+  margin: 0 5%;
+  box-sizing: border-box;
+  transition: transform 0.3s ease-in-out; /* Ajoutez une transition pour l'effet de zoom */
+  position: relative; /* Assure que z-index fonctionne */
+  z-index: 1; /* Place les cartes au-dessus de Earth */
+}
+
+.carte:hover {
+  transform: scale(1.25); /* Applique un zoom de 125% au survol */
+}
+
+.carte img {
+  width: 20vw;
+}
+
+@media (max-width: 768px) {
+  /* Définissez la largeur maximale pour les téléphones (par exemple, 768px) */
+  .card {
+    flex: 0 0 calc(100% - 20px); /* Afficher les cartes en pleine largeur sur les petits écrans */
+  }
 }
