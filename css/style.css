@@ -34,9 +34,8 @@ a {
 
 /* Header */
 
-main {
-  padding-block: 100px;
-}
+
+
 
 Header {
   padding-top: 10px;
@@ -67,11 +66,12 @@ Header {
   padding-bottom: 20px;
 }
 
-#navigation > li {
-  padding: 2%;
-  background-color: lightblue;
-  transition: background-color 0.4s;
-  border-radius: 10px;
+#navigation>li{
+    padding:2%;
+    background-color: lightblue;
+    transition: background-color 0.4s;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 #navigation > li:hover {
@@ -80,10 +80,12 @@ Header {
 
 /* Main */
 
-main {
-  background-color: black;
-  margin-inline: auto;
-  height: 1000px;
+main{
+    background-color: black;
+    margin-inline:auto;
+
+    height:max(fit-content,600px);
+    
 }
 
 #indicateur {
@@ -106,11 +108,8 @@ main {
   color: white;
 }
 
-#earth {
-  position: relative;
-  width: 0;
-  height: 0;
-  z-index: 0;
+#earth{
+    position:absolute;
 }
 
 @media (max-width: 1000px) {
@@ -124,6 +123,24 @@ main {
     width: 200px;
   }
 }
+
+
+#list_card{
+display:grid;
+grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+width:100%;
+justify-items: center;
+}
+
+
+
+.image_slide{
+    height:auto;
+    width:50%;
+    transition: 
+}
+
+
 /* footer */
 
 footer {
