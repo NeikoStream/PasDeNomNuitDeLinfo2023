@@ -39,8 +39,14 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 // Obtenez l'élément HTML avec l'ID "earth"
 const earthContainer = document.getElementById("earth");
 
+// Ajustez la largeur du rendu sur 100vw
+renderer.domElement.style.width = '98vw'; // Réglage de la largeur sur 100vw
+renderer.domElement.style.height = 'auto'; // Réglage de la hauteur sur "auto" pour conserver les proportions
+
 // Ajoutez le canevas de rendu à l'élément avec l'ID "earth"
 earthContainer.appendChild(renderer.domElement);
+
+
 
 // Création d'un matériau pour les bâtiments
 const buildingMaterial = new THREE.MeshBasicMaterial({ color: 0x808080 }); // Couleur grise pour les bâtiments
